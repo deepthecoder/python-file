@@ -42,7 +42,7 @@ class LinkedList(object):
 x=LinkedList()
 print("Enter 1 for insert at front , 2 for insert at end, 3 for delete in between, 4 for display")
 n=input()
-while(n is not 5):
+whilen n is not 5:
     if n==1:
         y=input("Enter the node value")
         x.insert_front(y)
