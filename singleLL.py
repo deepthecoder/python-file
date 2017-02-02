@@ -9,21 +9,21 @@ class LinkedList(object):
     start=None
     end=None
     
-    def insert_end(self,data):         //to insert a node in the end 
+    def insert_end(self,data):         #to insert a node in the end 
         temp=list(data,None)
         if self.start==None:
             self.start=self.end=temp
         else:
             self.end.next=node
             
-   def insert_front(self,data):        //to insert a node at the beginning
+   def insert_front(self,data):        #to insert a node at the beginning
        temp=list(data,None)
        if self.start==None:
             self.start=self.end=temp
        temp.next=self.start
        self.start=temp
        
-   def remove_in_between(self,value):   //to remove a particular node identified by its value
+   def remove_in_between(self,value):   #to remove a particular node identified by its value
        curr=self.start
        prev=None
        while curr.data is not value:
@@ -32,7 +32,7 @@ class LinkedList(object):
        prev.next=curr.next
        curr.next=None
   
-  def display(self):                    //displaying the contents of the linked list
+  def display(self):                    #displaying the contents of the linked list
       curr=self.start
       while curr is not None:
           print curr.data,"->",
@@ -42,7 +42,7 @@ class LinkedList(object):
 x=LinkedList()
 print("Enter 1 for insert at front , 2 for insert at end, 3 for delete in between, 4 for display")
 n=input()
-whilen n is not 5:
+while n is not 5:
     if n==1:
         y=input("Enter the node value")
         x.insert_front(y)
